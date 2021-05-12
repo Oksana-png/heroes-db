@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script/script.js"></script>
+    <title>Heroes</title>
+  </head>
+  <body>
+    <div class="wrap-f">
+      <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="logo"><a href="#" class="logo__link">Heroes</a></div>
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="scroll menu__link">Все герои</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="scroll menu__link">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Heroes page</h1>
+        <div class="wrap-filter">
+          <button class="select-all button">Show all</button>
+          <div class="choice-gender">
+            <div class="option">
+              <input
+                class="input-radio"
+                type="radio"
+                name="gender"
+                id="female"
+              />
+              <label
+                for="female"
+                data-value-g="female"
+                class="choice__gender gender button"
+                >female</label
+              >
+            </div>
+            <div class="option">
+              <input class="input-radio" type="radio" name="gender" id="male" />
+              <label
+                for="male"
+                data-value-g="male"
+                class="choice__gender gender button"
+                >male</label
+              >
+            </div>
+          </div>
+
+          <select name="species" class="choice-species">
+            <option value="" class="choice-value">Choose a species</option>
+            <option value="human" class="choice-value">human</option>
+            <option value="Zehoberei" class="choice-value">zehoberei</option>
+            <option value="flora colossus" class="choice-value">
+              flora colossus
+            </option>
+            <option value="Asgardian" class="choice-value">Asgardian</option>
+            <option value="kronan" class="choice-value">kronan</option>
+            <option value="Frost Giant" class="choice-value">
+              Frost Giant
+            </option>
+            <option value="Titan" class="choice-value">Titan</option>
+            <option value="Android" class="choice-value">Android</option>
+            <option value="Centaurian" class="choice-value">Centaurian</option>
+          </select>
+          <div class="choice-live choice-gender">
+            <div class="option">
+              <input
+                class="input-radio"
+                type="radio"
+                name="live"
+                id="deceased"
+              />
+              <label
+                for="deceased"
+                data-value-g="deceased"
+                class="choice-alive button"
+                >deceased</label
+              >
+            </div>
+            <div class="option">
+              <input class="input-radio" type="radio" name="live" id="alive" />
+              <label
+                for="alive"
+                data-value-g="alive"
+                class="choice-alive button"
+                >alive</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="cards"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__info">
+          Контактные данные:
+          <a href="https://vk.com/oksi_456" class="vk-link">VK</a>
+        </div>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>
